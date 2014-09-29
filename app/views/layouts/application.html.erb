@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PocTurbolinks</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= audio_tag("new_message_alert.mp3","new_message_alert.wav","new_message_alert.ogg", { id: "chatAudio"}) %>
+<%= yield %>
+
+</body>
+</html>
